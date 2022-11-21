@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { MdOutlineCancel } from "react-icons/md";
 import logo004 from "../data/svg02.svg";
 
-import { links, nRevistas } from "../data/dummy";
+import { nRevistas } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
 
 const Sidebar = () => {

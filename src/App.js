@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Routes, Route, useLocation, useParams } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
-
 import { Navbar, Footer, Sidebar, ThemeSettings } from "./components";
 
 import {
@@ -30,6 +29,7 @@ const App = () => {
     setCurrentMode,
   } = useStateContext();
 
+
   useEffect(() => {
     const currentThemeColor = localStorage.getItem("colorMode");
     const currentThemeMode = localStorage.getItem("themeMode");
@@ -38,7 +38,7 @@ const App = () => {
       setCurrentColor(currentThemeColor);
       setCurrentMode(currentThemeMode);
     }
-  }, []);
+  }, [ ]);
 
   return (
     <div className={currentMode === "Dark" ? "dark" : ""}>

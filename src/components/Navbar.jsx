@@ -125,15 +125,6 @@ const Navbar = () => {
                         </li>
                         <li>
                           <NavLink
-                            to="/contacto"
-                            className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-                            onClick={() => setOpenNavbar(false)}
-                          >
-                            <span>Contacto</span>
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink
                             to="/instrucciones"
                             className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
                             onClick={() => setOpenNavbar(false)}
@@ -174,14 +165,6 @@ const Navbar = () => {
                     className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
                   >
                     <span>Misión</span>
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/contacto"
-                    className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-                  >
-                    <span>Contacto</span>
                   </NavLink>
                 </li>
                 <li>
