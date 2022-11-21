@@ -1,0 +1,8 @@
+export { default as Investigaciones } from "./Investigaciones"
+export { default as Instrucciones } from "./Instrucciones"
+export { default as About } from "./About"
+export { default as Mision } from "./Mision"
+export { default as Contacto } from "./Contacto"
+export { default as Actual } from "./Actual"
+export { default as Pdf } from "./Pdf"
+export { default as PageActual } from "./PageActual"
