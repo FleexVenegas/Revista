@@ -23,7 +23,7 @@ const Actual = () => {
                 <div className="flex justify-center">
                   <div className="">
                     <NavLink
-                      to="/Numero Actual"
+                      to="/NumeroActual"
                     >
                       <img
                         src={item.image}
