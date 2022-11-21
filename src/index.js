@@ -17,11 +17,4 @@ createRoot(document.getElementById("root")).render(
   </ContextProvider>
 );
 
-// createRoot.render(
-//   <ContextProvider>
-//     <App />
-//   </ContextProvider>,
-//   document.getElementById("root")
-// );
-
 reportWebVitals();
