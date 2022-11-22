@@ -10,7 +10,7 @@ const Actual = () => {
       <div className="flex justify-center m-2 md:m-1 p-2 md:p-5 items-center mt-14">
         <img src={svg} alt="Banner" className="w-80 md:w-800" />
       </div>
-      <div className="dark:bg-gray-600 dark:text-white m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+      <div className="dark:bg-gray-600 dark:text-white m-2 md:m-10 mt-10 p-2 md:p-10 bg-white rounded-3xl">
         <Header category="Último Número" />
         <div className="p-5 bg-slate-100 dark:bg-gray-500 rounded-2xl opacity-90">
           {ultimoNumero.map((item) => (
