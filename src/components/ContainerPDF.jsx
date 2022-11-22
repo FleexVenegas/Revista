@@ -76,7 +76,6 @@ const ContainerPDF = ({ mostrar }) => {
   const [visualizarPDF, setVisualizarPDF] = useState(true);
 
   useEffect(() => {
-    let navegador = navigator.userAgent;
     if (
       navigator.userAgent.match(/Android/i) ||
       navigator.userAgent.match(/webOS/i) ||

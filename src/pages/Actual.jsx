@@ -2,13 +2,9 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Header } from "../components";
 import svg from "../data/Titulo-2.svg";
-import { useStateContext } from "../contexts/ContextProvider";
 import { ultimoNumero, DescriptionUltimoNumero } from "../data/dummy";
 
 const Actual = () => {
-
-  const { currentColor } = useStateContext();
-
   return (
     <>
       <div className="flex justify-center m-2 md:m-1 p-2 md:p-5 items-center">
