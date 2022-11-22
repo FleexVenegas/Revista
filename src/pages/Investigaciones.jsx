@@ -7,8 +7,8 @@ const Investigaciones = () => {
   return (
     <div className=" dark:bg-gray-600 dark:text-white m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
       <Header
-        category="Temachtiani"
-        title="Revista internacional de ciencias de la educación"
+        title="Temachtiani"
+        category="Revista Internacional de Ciencias de la Educación"
       />
       <div className="w-600 flex items-center justify-center flex-wrap ">
         {cartData.map((item) => (

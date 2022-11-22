@@ -86,7 +86,7 @@ const ContainerPDF = ({ mostrar }) => {
       navigator.userAgent.match(/Windows Phone/i)
     ) {
       setVisualizarPDF(false);
-    } 
+    }
   }, []);
 
   return (
@@ -101,14 +101,17 @@ const ContainerPDF = ({ mostrar }) => {
         <main className="flex dark:bg-gray-600 dark:text-white m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl justify-center opacity-80">
           <div className="p-5 bg-slate-100 dark:bg-gray-500 rounded-2xl">
             <p className="pb-5">
-              Lo sentimos pero no se puede ver la revista en un dispositivo movil.
+              <strong>
+                Lo sentimos pero no se puede ver la Revista en dispositivos
+                móviles y tablets.
+              </strong>
             </p>
             <a
               href={PDF}
               download
               className="mt-10 bg-orange-500 p-2 rounded-md"
             >
-              Descargar
+              Descargar Revista
             </a>
           </div>
         </main>
