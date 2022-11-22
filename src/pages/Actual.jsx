@@ -1,17 +1,18 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Header } from "../components";
-import svg from "../data/svg02.svg";
-//import { useStateContext } from "../contexts/ContextProvider";
+import svg from "../data/Titulo-2.svg";
+import { useStateContext } from "../contexts/ContextProvider";
 import { ultimoNumero, DescriptionUltimoNumero } from "../data/dummy";
 
 const Actual = () => {
+
+  const { currentColor } = useStateContext();
+
   return (
     <>
-      <div className="flex justify-center m-2 md:m-1 p-2 md:p-5">
-        <div className="mt-10">
-          <img src={svg} alt="Banner" className="w-80 md:w-800" />
-        </div>
+      <div className="flex justify-center m-2 md:m-1 p-2 md:p-5 items-center">
+        <img src={svg} alt="Banner" className="w-80 md:w-800" />
       </div>
       <div className="dark:bg-gray-600 dark:text-white m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
         <Header category="Último Número" />
@@ -22,9 +23,7 @@ const Actual = () => {
               <div className="md:flex ms:gap-5 mt-5">
                 <div className="flex justify-center">
                   <div className="">
-                    <NavLink
-                      to="/NumeroActual"
-                    >
+                    <NavLink to="/NumeroActual">
                       <img
                         src={item.image}
                         alt={item.alt}

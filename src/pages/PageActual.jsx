@@ -4,7 +4,7 @@ import { ContainerPDF } from "../components";
 const PageActual = () => {
   return (
     <>
-    <ContainerPDF mostrar="revista educacion"/>
+      <ContainerPDF mostrar="revista educacion" />
     </>
   );
 };

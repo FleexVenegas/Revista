@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { MdOutlineCancel } from "react-icons/md";
-import logo004 from "../data/svg02.svg";
+import logo004 from "../data/Sidebar.svg";
 
 import { nRevistas } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
