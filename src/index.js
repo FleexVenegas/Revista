@@ -3,9 +3,7 @@
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 
 import React from "react";
-//import ReactDOM from "react-dom";
 import { createRoot } from "react-dom/client";
-import reportWebVitals from "./reportWebVitals";
 
 import "./index.css";
 import App from "./App";
@@ -16,5 +14,3 @@ createRoot(document.getElementById("root")).render(
     <App />
   </ContextProvider>
 );
-
-reportWebVitals();
