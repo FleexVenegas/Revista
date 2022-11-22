@@ -64,6 +64,7 @@ const Sidebar = () => {
           <div className="mt-10">
             <NavLink
               to="/NumeroActual"
+              onClick={handleCloseSideBar}
               style={({ isActive }) => ({
                 backgroundColor: isActive ? currentColor : "",
               })}
@@ -77,6 +78,7 @@ const Sidebar = () => {
                 <div className="flex items-center">
                   <NavLink
                     to="/Investigaciones"
+                    onClick={handleCloseSideBar}
                     style={({ isActive }) => ({
                       backgroundColor: isActive ? currentColor : "",
                     })}
@@ -133,28 +135,6 @@ const Sidebar = () => {
                 )}
               </div>
             ))}
-
-            {/* {links.map((item) => (
-              <div key={item.title}>
-                <p className="text-gray-400 m-3 mt-4 uppercase">{item.title}</p>
-
-                {item.links.map((link) => (
-                  <NavLink
-                    to={`/${link.name}`}
-                    key={link.name}
-                    onClick={handleCloseSideBar}
-                    style={({ isActive }) => ({
-                      backgroundColor: isActive ? currentColor : "",
-                    })}
-                    className={({ isActive }) =>
-                      isActive ? activeLink : normalLink
-                    }
-                  >
-                    <span className="capitalize text-white">{link.name}</span>
-                  </NavLink>
-                ))}
-              </div>
-            ))} */}
           </div>
         </>
       )}
