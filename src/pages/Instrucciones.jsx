@@ -13,7 +13,7 @@ import {
 
 const Instrucciones = () => {
   return (
-    <div className="dark:bg-gray-600 dark:text-white m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl bg-fondo-b bg-cover bg-center">
+    <div className="dark:bg-gray-600 dark:text-white m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl md:bg-fondo-b md:bg-cover md:bg-center">
       <div className="flex items-center">
         <Header
           category="Revista internacional de Ciencias de la Educación Temachtiani"
