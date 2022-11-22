@@ -56,7 +56,7 @@ const Navbar = () => {
                 type="button"
                 onClick={() => handleActiveNavbar()}
               >
-                Menu
+                Menú
                 <svg
                   viewBox="0 0 8 6"
                   className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400"
