@@ -31,6 +31,7 @@ const App = () => {
 
 
   useEffect(() => {
+
     const currentThemeColor = localStorage.getItem("colorMode");
     const currentThemeMode = localStorage.getItem("themeMode");
 
@@ -38,6 +39,8 @@ const App = () => {
       setCurrentColor(currentThemeColor);
       setCurrentMode(currentThemeMode);
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ ]);
 
   return (
