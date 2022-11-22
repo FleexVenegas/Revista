@@ -8,7 +8,6 @@ import {
   About,
   Instrucciones,
   Mision,
-  Contacto,
   Actual,
   Pdf,
   PageActual,
@@ -86,7 +85,6 @@ const App = () => {
                 <Route path="/Instrucciones" element={<Instrucciones />} />
                 <Route path="/About" element={<About />} />
                 <Route path="/Mision" element={<Mision />} />
-                <Route path="/Contacto" element={<Contacto />} />
                 <Route path="/RICET/" element={<Pdf />} />
                 <Route path="/NumeroActual" element={<PageActual />} />
               </Routes>

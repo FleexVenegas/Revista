@@ -40,12 +40,6 @@ const Footer = () => {
                 <span>Misión</span>
               </NavLink>
               <NavLink
-                to="/contacto"
-                className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-              >
-                <span>Contacto</span>
-              </NavLink>
-              <NavLink
                 to="/instrucciones"
                 className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
               >
