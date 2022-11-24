@@ -2,6 +2,7 @@ import React from "react";
 import portada01 from "./JUNIO-2019.png";
 import portada02 from "./NOVIEMBRE-2020.png";
 import portada03 from "./ENERO-2021.png";
+import portada04 from './JUNIO-2021.png'
 import numeroActual from "./Revista01.png";
 
 //Mi paginas de trabajo
@@ -263,7 +264,7 @@ export const MisionVision = () => (
         inserción temprana a la investigación, y la generación de conocimiento
         desde la experiencia de los apasionados de temas educativos, que
         permitan el intercambio del debate científico educativo desde diversos
-        ámbitos del conocimiento
+        ámbitos del conocimiento a
       </p>
     </div>
     <div className="p-10 rounded-xl bg-slate-100 dark:bg-gray-500 mb-5">
@@ -282,41 +283,6 @@ export const MisionVision = () => (
     </div>
   </div>
 );
-
-export const nRevistas = [
-  {
-    titleR: "Revistas",
-    nombreRevista: [
-      {
-        nombre: "RICET-JUNIO-2019",
-      },
-      {
-        nombre: "RICET-NOVIEMBRE-2020",
-      },
-      {
-        nombre: "RICET-ENERO-2021",
-      },
-    ],
-  },
-];
-
-export const links = [
-  {
-    title: "Edicion 1",
-    links: [
-      {
-        name: "Articulo I",
-        link: "Edicion 1 ",
-      },
-      {
-        name: "Articulo II",
-      },
-      {
-        name: "Articulo III",
-      },
-    ],
-  },
-];
 
 export const InfoPuntos = [
   {
@@ -345,6 +311,45 @@ export const InfoPuntos = [
   },
 ];
 
+export const links = [
+  {
+    title: "Edicion 1",
+    links: [
+      {
+        name: "Articulo I",
+        link: "Edicion 1 ",
+      },
+      {
+        name: "Articulo II",
+      },
+      {
+        name: "Articulo III",
+      },
+    ],
+  },
+];
+
+export const nRevistas = [
+  {
+    titleR: "Revistas",
+    nombreRevista: [
+      {
+        nombre: "RICET-JUNIO-2019",
+      },
+      {
+        nombre: "RICET-NOVIEMBRE-2020",
+      },
+      {
+        nombre: "RICET-ENERO-2021",
+      },
+      {
+        nombre: "RICET-JUNIO-2021"
+      }
+    ],
+  },
+];
+
+
 export const cartData = [
   {
     image: portada01,
@@ -361,6 +366,11 @@ export const cartData = [
     alt: "portada3",
     title: "RICET-ENERO-2021",
   },
+  {
+    image: portada04,
+    alt: "portada4",
+    title: "RICET-JUNIO-2021"
+  }
 ];
 
 /* Este apartado es donde se modificara cada vez que quieras subir un archivo a la web */
