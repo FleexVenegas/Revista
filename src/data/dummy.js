@@ -341,9 +341,6 @@ export const nRevistas = [
       },
       {
         nombre: "RICET-ENERO-2021",
-      },
-      {
-        nombre: "RICET-JUNIO-2021"
       }
     ],
   },
@@ -365,11 +362,6 @@ export const cartData = [
     image: portada03,
     alt: "portada3",
     title: "RICET-ENERO-2021",
-  },
-  {
-    image: portada04,
-    alt: "portada4",
-    title: "RICET-JUNIO-2021"
   }
 ];
 
