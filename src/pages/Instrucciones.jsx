@@ -61,7 +61,7 @@ const Instrucciones = () => {
               </tbody>
             </table>
             <span className="dark:text-white">
-              <strong>NOTA: todo el año se reciben contribuciones.</strong>
+              <strong>NOTA: Todo el año se reciben contribuciones.</strong>
             </span>
           </div>
         </div>
