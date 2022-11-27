@@ -371,7 +371,7 @@ export const cartData = [
     title: "RICET-ENERO-2021",
   },
   {
-    imge: portada04,
+    image: portada04,
     alt: "portada04",
     title: "RICET-JUNIO-21"
   }
