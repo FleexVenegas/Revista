@@ -329,6 +329,8 @@ export const links = [
   },
 ];
 
+
+///AQUI ES DONDE DE AGREGA LOS NOMBRES DE LAS REVISTAS A LAS LISTA
 export const nRevistas = [
   {
     titleR: "Revistas",
@@ -341,12 +343,17 @@ export const nRevistas = [
       },
       {
         nombre: "RICET-ENERO-2021",
+      },
+      {
+        nombre: "RICET-JUNIO-2021"
       }
     ],
   },
 ];
 
 
+
+//// AQUI ES DONDE SE AGREGAN LAS IMAGENES PARA MOSTRAR LAS PORTADAS
 export const cartData = [
   {
     image: portada01,
@@ -362,6 +369,11 @@ export const cartData = [
     image: portada03,
     alt: "portada3",
     title: "RICET-ENERO-2021",
+  },
+  {
+    imge: portada04,
+    alt: "portada04",
+    title: "RICET-JUNIO-21"
   }
 ];
 
