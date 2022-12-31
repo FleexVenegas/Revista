@@ -1,14 +1,24 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { Header } from "../components";
 import svg from "../data/Titulo-2.svg";
+import svgWhite from "../data/Sidebar.svg";
 import { ultimoNumero, DescriptionUltimoNumero } from "../data/dummy";
+import Button from "../components/Button/Button";
+import { useStateContext } from "../contexts/ContextProvider";
 
 const Actual = () => {
+
+  const navigate = useNavigate()
+
+  const {
+    currentMode
+  } = useStateContext();
+  
   return (
     <>
       <div className="flex justify-center m-2 md:m-1 p-2 md:p-5 items-center mt-14">
-        <img src={svg} alt="Banner" className="w-80 md:w-800" />
+        <img src={currentMode === "Dark" ?  svgWhite: svg} alt="Banner" className="w-80 md:w-800" />
       </div>
       <div className="dark:bg-gray-600 dark:text-white m-2 md:m-10 mt-10 p-2 md:p-10 bg-white rounded-3xl">
         <Header category="Último Número" />
@@ -42,12 +52,10 @@ const Actual = () => {
             </div>
           ))}
         </div>
-        <Link
-          to="/instrucciones"
-          className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-        >
-          <span>Enviar un Articulo</span>
-        </Link>
+        <div className="mt-5 flex justify-end">
+            <Button title={"Enviar un articulo"} onCLick={() => navigate("/instrucciones")}/>
+        </div>
+      
       </div>
     </>
   );

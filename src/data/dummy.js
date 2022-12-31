@@ -336,15 +336,19 @@ export const nRevistas = [
     titleR: "Revistas",
     nombreRevista: [
       {
+        id: 1,
         nombre: "RICET-JUNIO-2019",
       },
       {
+        id: 2,
         nombre: "RICET-NOVIEMBRE-2020",
       },
       {
+        id: 3,
         nombre: "RICET-ENERO-2021",
       },
       {
+        id: 4,
         nombre: "RICET-JUNIO-2021"
       }
     ],
@@ -356,21 +360,25 @@ export const nRevistas = [
 //// AQUI ES DONDE SE AGREGAN LAS IMAGENES PARA MOSTRAR LAS PORTADAS
 export const cartData = [
   {
+    id: 1,
     image: portada01,
     alt: "portada1",
     title: "RICET-JUNIO-2019",
   },
   {
+    id: 2,
     image: portada02,
     alt: "portada2",
     title: "RICET-NOVIEMBRE-2020",
   },
   {
+    id: 3,
     image: portada03,
     alt: "portada3",
     title: "RICET-ENERO-2021",
   },
   {
+    id: 4,
     image: portada04,
     alt: "portada04",
     title: "RICET-JUNIO-21"
