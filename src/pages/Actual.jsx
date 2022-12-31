@@ -5,6 +5,7 @@ import svg from "../data/Titulo-2.svg";
 import { ultimoNumero, DescriptionUltimoNumero } from "../data/dummy";
 
 const Actual = () => {
+  
   return (
     <>
       <div className="flex justify-center m-2 md:m-1 p-2 md:p-5 items-center mt-14">
