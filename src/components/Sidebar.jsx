@@ -16,8 +16,8 @@ const Sidebar = () => {
     setActiveMenuRevistas,
   } = useStateContext();
 
-  const handleCloseSideBar = ({ path }) => {
-    if (activeMenu !== undefined && screenSize <= 900) {
+  const handleCloseSideBar = () => {
+    if (activeMenu !== undefined && screenSize <= 900) { 
       setActiveMenu(false);
     }
   };
@@ -38,7 +38,7 @@ const Sidebar = () => {
             <div>
               <Link
                 to="/"
-                onClick={() => handleCloseSideBar}
+                onClick={handleCloseSideBar}
                 className="items-center gap-3 mt-4 flex text-xl font-extrabold tracking-tinght dark:text-white text-slate-900"
               >
                 <img src={logo004} alt="Logo" width={200} />
@@ -111,27 +111,25 @@ const Sidebar = () => {
 
                 {/* //////////////////////////////////////////////////////////////////////////// */}
                 {activeMenuRevistas ? (
-                  <div>
+                  <>
                     {revista.nombreRevista.map((i) => (
                       <NavLink
                         key={i.nombre}
                         to={`/RICET/?${i.nombre}`}
+
                         onClick={handleCloseSideBar}
-                        style={({ isActive }) => ({
-                          backgroundColor: isActive ? currentColor : "",
-                        })}
-                        className={({ isActive }) =>
-                          isActive ? activeLink : normalLink
-                        }
+
+                        style={({ isActive }) => ({ backgroundColor: isActive ? currentColor : "" })}
+                        className={({ isActive }) => isActive ? activeLink : normalLink }
                       >
                         <span className="capitalize text-white">
                           {i.nombre}
                         </span>
                       </NavLink>
                     ))}
-                  </div>
+                  </>
                 ) : (
-                  <div></div>
+                  <></>
                 )}
               </div>
             ))}

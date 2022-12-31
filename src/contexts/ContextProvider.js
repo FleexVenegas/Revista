@@ -2,16 +2,8 @@ import React, { createContext, useState, useContext } from "react";
 
 const StateContext = createContext();
 
-const initialState = {
-  chat: false,
-  chart: false,
-  userProfile: false,
-  notification: false,
-};
-
 export const ContextProvider = ({ children }) => {
   const [activeMenu, setActiveMenu] = useState(false);
-  const [isClicked, setIsClicked] = useState(initialState);
   const [screenSize, setScreenSize] = useState(undefined);
   const [currentColor, setCurrentColor] = useState("#03c9d7");
   const [currentMode, setCurrentMode] = useState("Light");
@@ -33,18 +25,12 @@ export const ContextProvider = ({ children }) => {
     setThemeSettings(false);
   };
 
-  const handleClick = (clicked) =>
-    setIsClicked({ ...initialState, [clicked]: true });
-
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
     <StateContext.Provider
       value={{
         activeMenu,
         setActiveMenu,
-        isClicked,
-        setIsClicked,
-        handleClick,
         screenSize,
         setScreenSize,
         currentColor,

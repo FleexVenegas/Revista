@@ -95,7 +95,7 @@ const Navbar = () => {
                       </h2>
                     </div>
                     <nav className="mt-6">
-                      <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
+                      <ul className="my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                         <li>
                           <NavLink
                             to="/"
@@ -137,7 +137,7 @@ const Navbar = () => {
                   </div>
                 </div>
               ) : (
-                <div></div>
+                <></>
               )}
             </div>
 
