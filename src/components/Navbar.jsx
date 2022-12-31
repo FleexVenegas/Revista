@@ -25,6 +25,12 @@ const NavButton = ({ customFunc, icon, color, dotColor, text }) => (
   </button>
 );
 
+const activeLinks = ({isActive}) => {
+  return{
+    className: isActive ? "text-teal-500" : null
+  }
+}
+
 const Navbar = () => {
   const {
     activeMenu,
