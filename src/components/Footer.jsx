@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="md:flex md:justify-around">
           <div className="md:w-400 mb-5 mr-3">
             <h1 className="dark:text-white text-black">
-              <strong>RICET</strong>
+              <strong>ricedut</strong>
             </h1>
             <p className="dark:text-gray-200 text-gray-700">
               Enseñar a los chicos como alimentarse a si mismo y cómo vivir en
@@ -56,10 +56,10 @@ const Footer = () => {
             <span>
               <strong>Contacto principal </strong>
               <a
-                href="mailto:ricet@gmail.com"
+                href="mailto:ricedut@gmail.com"
                 className="dark:text-sky-200 text-sky-900"
               >
-                ricet@gmail.com
+                ricedut@gmail.com
               </a>
             </span>
             <h1>San Lorenzo 381 Guadalajara - México</h1>

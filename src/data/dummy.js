@@ -83,7 +83,7 @@ export const Convocatoria = () => (
   <div>
     <div className="mb-10">
       <h1 className="text-xl uppercase mb-2 mt-2 dark:text-gray-300">
-        CONVOCATORIA PARA PUBLICAR EN LA RICET
+        CONVOCATORIA PARA PUBLICAR EN LA ricedut
       </h1>
       <p className="text-justify text-lg">
         El comité editorial de la Revista internacional de Ciencias de la
@@ -102,7 +102,7 @@ export const Evaluacion = () => (
     autores oportunamente de su recepción y del estatus de su manuscrito. Se
     deberán enviar al correo electrónico{" "}
     <span className="dark:text-sky-200 text-sky-900">
-      <a href="mailto:ricet@gmail.com">ricet@gmail.com</a>
+      <a href="mailto:ricedut@gmail.com">ricedut@gmail.com</a>
     </span>
   </p>
 );
@@ -231,7 +231,7 @@ export const InstruccionesAutores = () => (
           a las instrucciones para enviar manuscritos, diríjase al correo
           electrónico de la revista:{" "}
           <span className="dark:text-sky-200 text-sky-900">
-            <a href="mailto:ricet@gmail.com">ricet@gmail.com</a>
+            <a href="mailto:ricedut@gmail.com">ricedut@gmail.com</a>
           </span>
         </p>
       </div>
@@ -337,19 +337,19 @@ export const nRevistas = [
     nombreRevista: [
       {
         id: 1,
-        nombre: "RICET-JUNIO-2019",
+        nombre: "RICEDUT-JUNIO-2019",
       },
       {
         id: 2,
-        nombre: "RICET-NOVIEMBRE-2020",
+        nombre: "RICEDUT-NOVIEMBRE-2020",
       },
       {
         id: 3,
-        nombre: "RICET-ENERO-2021",
+        nombre: "RICEDUT-ENERO-2021",
       },
       {
         id: 4,
-        nombre: "RICET-JUNIO-2021"
+        nombre: "RICEDUT-JUNIO-2021"
       }
     ],
   },
@@ -363,25 +363,25 @@ export const cartData = [
     id: 1,
     image: portada01,
     alt: "portada1",
-    title: "RICET-JUNIO-2019",
+    title: "RICEDUT-JUNIO-2019",
   },
   {
     id: 2,
     image: portada02,
     alt: "portada2",
-    title: "RICET-NOVIEMBRE-2020",
+    title: "RICEDUT-NOVIEMBRE-2020",
   },
   {
     id: 3,
     image: portada03,
     alt: "portada3",
-    title: "RICET-ENERO-2021",
+    title: "RICEDUT-ENERO-2021",
   },
   {
     id: 4,
     image: portada04,
     alt: "portada04",
-    title: "RICET-JUNIO-21"
+    title: "RICEDUT-JUNIO-21"
   }
 ];
 

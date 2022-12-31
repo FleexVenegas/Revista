@@ -30,7 +30,7 @@ const Investigaciones = () => {
                       dark:focus:text-blue-600 
                       dark:active:text-blue-600"
           >
-            <NavLink to={`/RICET/${item.id}/?${item.title}`}>
+            <NavLink to={`/ricedut/${item.id}/?${item.title}`}>
               <img alt={item.alt} src={item.image} />
               <p className="mt-3 uppercase">{item.title}</p>
             </NavLink>
