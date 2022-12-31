@@ -115,7 +115,7 @@ const Sidebar = () => {
                     {revista.nombreRevista.map((i) => (
                       <NavLink
                         key={i.id}
-                        to={`/RICET/${i.id}/?${i.nombre}`}
+                        to={`/ricedut/${i.id}/?${i.nombre}`}
 
                         onClick={handleCloseSideBar}
 
