@@ -4,6 +4,12 @@ import { useStateContext } from "../contexts/ContextProvider";
 
 const Footer = () => {
   const { currentColor } = useStateContext();
+
+  const activeLinks = ({isActive}) => {
+    return{
+      color: isActive ? "rgb(20 184 166)" : null
+    }
+  }
   return (
     <>
       <main className="m-10 mt-24">
@@ -24,24 +30,28 @@ const Footer = () => {
               <NavLink
                 to="/"
                 className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+                style={activeLinks}
               >
                 <span>Inicio</span>
               </NavLink>
               <NavLink
                 to="/about"
                 className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+                style={activeLinks}
               >
                 <span>Quiénes Somos</span>
               </NavLink>
               <NavLink
                 to="/mision"
                 className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+                style={activeLinks}
               >
                 <span>Misión</span>
               </NavLink>
               <NavLink
                 to="/instrucciones"
                 className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+                style={activeLinks}
               >
                 <span>Instrucciones para Autores</span>
               </NavLink>
