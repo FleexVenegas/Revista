@@ -27,7 +27,7 @@ const NavButton = ({ customFunc, icon, color, dotColor, text }) => (
 
 const activeLinks = ({isActive}) => {
   return{
-    className: isActive ? "text-teal-500" : null
+    color: isActive ? "rgb(20 184 166)" : null
   }
 }
 
@@ -153,7 +153,8 @@ const Navbar = () => {
                   <NavLink
                     to="/"
                     className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-                  >
+                    style={activeLinks}
+                  > 
                     <span>Actual</span>
                   </NavLink>
                 </li>
@@ -161,6 +162,7 @@ const Navbar = () => {
                   <NavLink
                     to="/about"
                     className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+                    style={activeLinks}
                   >
                     <span>Quiénes Somos</span>
                   </NavLink>
@@ -169,6 +171,7 @@ const Navbar = () => {
                   <NavLink
                     to="/mision"
                     className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+                    style={activeLinks}
                   >
                     <span>Misión</span>
                   </NavLink>
@@ -177,6 +180,7 @@ const Navbar = () => {
                   <NavLink
                     to="/instrucciones"
                     className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+                    style={activeLinks}
                   >
                     <span>Instrucciones para Autores</span>
                   </NavLink>
