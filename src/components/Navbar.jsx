@@ -25,19 +25,22 @@ const NavButton = ({ customFunc, icon, color, dotColor, text }) => (
   </button>
 );
 
-const activeLinks = ({isActive}) => {
-  return{
-    color: isActive ? "rgb(20 184 166)" : null
-  }
-}
-
 const Navbar = () => {
   const {
     activeMenu,
     setActiveMenu,
     openNavbar,
     setOpenNavbar,
+    currentColor
   } = useStateContext();
+
+const activeLinks = ({isActive}) => {
+  return{
+    color: isActive ? currentColor : null
+  }
+}
+
+
 
   const handleActiveMenu = () => setActiveMenu(!activeMenu);
   const handleActiveNavbar = () => setOpenNavbar(!openNavbar);
@@ -107,6 +110,7 @@ const Navbar = () => {
                             to="/"
                             className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
                             onClick={() => setOpenNavbar(false)}
+                            
                           >
                             <span>Actual</span>
                           </NavLink>
@@ -114,7 +118,7 @@ const Navbar = () => {
                         <li>
                           <NavLink
                             to="/about"
-                            className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+                            className="relative block px-3 py-2 transition hover:text-teal-500  dark:hover:text-teal-400"
                             onClick={() => setOpenNavbar(false)}
                           >
                             <span>Quiénes Somos</span>
