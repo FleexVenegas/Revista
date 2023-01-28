@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { useStateContext } from "../contexts/ContextProvider";
+import { useStateContext } from "../../contexts/ContextProvider";
 
 const NavButton = ({ customFunc, icon, color, dotColor, text }) => (
   <button
@@ -110,7 +110,6 @@ const activeLinks = ({isActive}) => {
                             to="/"
                             className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
                             onClick={() => setOpenNavbar(false)}
-                            
                           >
                             <span>Actual</span>
                           </NavLink>
