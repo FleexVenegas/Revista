@@ -1,5 +1,5 @@
 import React from "react";
-import { ContainerPDF } from "../components";
+import { ContainerPDF } from "../../components";
 
 const PageActual = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import Banner from "../data/banner.png";
-import { MisionVision } from "../data/dummy";
+import Banner from "../../data/banner.png";
+import { MisionVision } from "../../data/dummy";
 
 const Mision = () => {
   return (

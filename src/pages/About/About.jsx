@@ -1,6 +1,6 @@
 import React from "react";
-import { useStateContext } from "../contexts/ContextProvider";
-import avatar5 from "../data/avatar5.jpg"
+import { useStateContext } from "../../contexts/ContextProvider";
+import avatar5 from "../../data/avatar5.jpg"
 
 const About = () => {
   const { currentColor } = useStateContext();

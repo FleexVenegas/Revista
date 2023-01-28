@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../components";
+import { Header } from "../../components";
 
 import {
   InstruccionesAutores,
@@ -9,7 +9,7 @@ import {
   Evaluacion,
   field,
   tableConvocatoria,
-} from "../data/dummy";
+} from "../../data/dummy";
 
 const Instrucciones = () => {
   return (

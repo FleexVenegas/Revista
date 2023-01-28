@@ -1,11 +1,11 @@
 import React from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
-import { Header } from "../components";
-import svg from "../data/Titulo-2.svg";
-import svgWhite from "../data/Sidebar.svg";
-import { ultimoNumero, DescriptionUltimoNumero } from "../data/dummy";
-import Button from "../components/Button/Button";
-import { useStateContext } from "../contexts/ContextProvider";
+import { NavLink, useNavigate } from "react-router-dom";
+import { Header } from "../../components";
+import svg from "../../data/Titulo-2.svg";
+import svgWhite from "../../data/Sidebar.svg";
+import { ultimoNumero, DescriptionUltimoNumero } from "../../data/dummy";
+import Button from "../../components/Button/Button";
+import { useStateContext } from "../../contexts/ContextProvider";
 
 const Actual = () => {
 
